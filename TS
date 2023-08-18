@@ -1,0 +1,60 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+
+local Window = Rayfield:CreateWindow({
+    Name = "📱Trident Survival Script📱",
+    LoadingTitle = "TS cheat hub",
+    LoadingSubtitle = "by .pablo",
+    ConfigurationSaving = {
+       Enabled = false,
+       FolderName = nil,
+       FileName = "TS hub"
+    },
+    Discord = {
+       Enabled = true,
+       Invite = "srN2PZ6eFR",
+       RememberJoins = true
+    },
+    KeySystem = true,
+    KeySettings = {
+       Title = "TS cheat hub | key",
+       Subtitle = "Link in discord server",
+       Note = "discord.gg/srN2PZ6eFR",
+       FileName = "TS hub key",
+       SaveKey = false,
+       GrabKeyFromSite = true,
+       Key = {"https://pastebin.com/raw/PdW727gx"}
+    }
+ })
+
+ local MainTab = Window:CreateTab("🔫Combat", 4483362458) 
+ local MainSection = MainTab:CreateSection("🔫CombatSection")
+
+ Rayfield:Notify({
+    Title = "TS Cheat Hub Succsessfully Executed!",
+    Content = "discord.gg/srN2PZ6eFR",
+    Duration = 5,
+    Image = nil,
+    Actions = { 
+       Ignore = {
+          Name = "Okay!",
+          Callback = function()
+          print("The user tapped Okay!")
+       end
+    },
+ },
+ })
+
+ local MainTab = Window:CreateTab("Visuals", nil) 
+ local MainSection = MainTab:CreateSection("VisualsSection")
+
+ local MainTab = Window:CreateTab("Miscellaneous", nil) 
+ local MainSection = MainTab:CreateSection("MiscellaneousSection")
+
+ local MainTab = Window:CreateTab("local", nil) 
+ local MainSection = MainTab:CreateSection("localSection")
+
+ local MainTab = Window:CreateTab("world", nil) 
+ local MainSection = MainTab:CreateSection("worldSection")
+
+ local MainTab = Window:CreateTab("settings", nil) 
+ local MainSection = MainTab:CreateSection("settings")
