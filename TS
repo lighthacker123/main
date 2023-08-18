@@ -20,7 +20,7 @@ local Window = Rayfield:CreateWindow({
        Subtitle = "Link in discord server",
        Note = "discord.gg/srN2PZ6eFR",
        FileName = "TS hub key",
-       SaveKey = false,
+       SaveKey = true,
        GrabKeyFromSite = true,
        Key = {"https://pastebin.com/raw/PdW727gx"}
     }
@@ -67,12 +67,6 @@ local Window = Rayfield:CreateWindow({
     end,
  })
 
- local Button = VisualsTab:CreateButton({
-    Name = "Test",
-    Callback = function()
-    
-    end,
- })
 
  local Button = MiscellaneousTab:CreateButton({
     Name = "Test",
@@ -99,5 +93,23 @@ local Window = Rayfield:CreateWindow({
     Name = "Test",
     Callback = function()
     
+    end,
+ })
+
+
+ local Button = VisualsTab:CreateButton({
+    Name = "Fullbright",
+    Callback = function()
+local Light = game:GetService("Lighting")
+
+function dofullbright()
+Light.Ambient = Color3.new(1, 1, 1)
+Light.ColorShift_Bottom = Color3.new(1, 1, 1)
+Light.ColorShift_Top = Color3.new(1, 1, 1)
+end
+
+dofullbright()
+
+Light.LightingChanged:Connect(dofullbright)
     end,
  })
