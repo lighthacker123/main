@@ -44,17 +44,60 @@ local Window = Rayfield:CreateWindow({
  },
  })
 
- local MainTab = Window:CreateTab("Visuals", nil) 
- local MainSection = MainTab:CreateSection("VisualsSection")
+ local VisualsTab = Window:CreateTab("Visuals", nil) 
+ local VisualsSection = VisualsTab:CreateSection("VisualsSection")
 
- local MainTab = Window:CreateTab("Miscellaneous", nil) 
- local MainSection = MainTab:CreateSection("MiscellaneousSection")
+ local MiscellaneousTab = Window:CreateTab("Miscellaneous", nil) 
+ local MiscellaneousSection = MiscellaneousTab:CreateSection("MiscellaneousSection")
 
- local MainTab = Window:CreateTab("local", nil) 
- local MainSection = MainTab:CreateSection("localSection")
+ local localTab = Window:CreateTab("local", nil) 
+ local localSection = localTab:CreateSection("localSection")
 
- local MainTab = Window:CreateTab("world", nil) 
- local MainSection = MainTab:CreateSection("worldSection")
+ local worldTab = Window:CreateTab("world", nil) 
+ local worldSection = worldTab:CreateSection("worldSection")
 
- local MainTab = Window:CreateTab("settings", nil) 
- local MainSection = MainTab:CreateSection("settings")
+ local settingsTab = Window:CreateTab("settings", nil) 
+ local settingsSection = settingsTab:CreateSection("settings")
+
+
+ local Button = MainTab:CreateButton({
+    Name = "Test",
+    Callback = function()
+    
+    end,
+ })
+
+ local Button = VisualsTab:CreateButton({
+    Name = "Test",
+    Callback = function()
+    
+    end,
+ })
+
+ local Button = MiscellaneousTab:CreateButton({
+    Name = "Test",
+    Callback = function()
+    
+    end,
+ })
+
+ local Button = localTab:CreateButton({
+    Name = "Test",
+    Callback = function()
+    
+    end,
+ })
+
+ local Button = worldTab:CreateButton({
+    Name = "Test",
+    Callback = function()
+    
+    end,
+ })
+
+ local Button = settingsTab:CreateButton({
+    Name = "Test",
+    Callback = function()
+    
+    end,
+ })
